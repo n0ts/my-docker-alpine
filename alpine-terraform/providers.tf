@@ -7,6 +7,14 @@ provider "aws" {
 }
 
 #
+# Google provider
+#
+provider "google" {
+  # https://github.com/terraform-providers/terraform-provider-google/blob/master/CHANGELOG.md
+  version = "2.5.1"
+}
+
+#
 # Null provider
 #
 provider "null" {
@@ -36,6 +44,14 @@ provider "external" {
 provider "mysql" {
   # https://github.com/terraform-providers/terraform-provider-mysql/blob/master/CHANGELOG.md
   version = "1.5.1"
+}
+
+#
+# Postgres provider
+#
+provider "postgresql" {
+  # https://github.com/terraform-providers/terraform-provider-postgresql/blob/master/CHANGELOG.md
+  version = "0.3.0"
 }
 
 #

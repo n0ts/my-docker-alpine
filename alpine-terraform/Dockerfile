@@ -12,6 +12,7 @@ RUN set -x \
     && unzip terraform_${VERSION}_linux_amd64.zip -d /usr/bin \
     && rm -f terraform_* \
     && cd /work; terraform init . \
-    && terraform --version
+    && terraform --version \
+    && terraform providers
 
 CMD ["terraform"]
