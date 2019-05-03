@@ -7,19 +7,11 @@ provider "aws" {
 }
 
 #
-# Google provider
+# Datadog provider
 #
-provider "google" {
-  # https://github.com/terraform-providers/terraform-provider-google/blob/master/CHANGELOG.md
-  version = "2.5.1"
-}
-
-#
-# Null provider
-#
-provider "null" {
-  # https://github.com/terraform-providers/terraform-provider-null/blob/master/CHANGELOG.md
-  version = "1.0.0"
+provider "datadog" {
+  # https://github.com/terraform-providers/terraform-provider-datadog/blob/master/CHANGELOG.md
+  version = "1.8.0"
 }
 
 #
@@ -39,11 +31,27 @@ provider "external" {
 }
 
 #
+# Google provider
+#
+provider "google" {
+  # https://github.com/terraform-providers/terraform-provider-google/blob/master/CHANGELOG.md
+  version = "2.5.1"
+}
+
+#
 # MySQL provider
 #
 provider "mysql" {
   # https://github.com/terraform-providers/terraform-provider-mysql/blob/master/CHANGELOG.md
   version = "1.5.1"
+}
+
+#
+# Null provider
+#
+provider "null" {
+  # https://github.com/terraform-providers/terraform-provider-null/blob/master/CHANGELOG.md
+  version = "1.0.0"
 }
 
 #
