@@ -13,7 +13,7 @@ RUN set -x \
 
 USER alpine
 
-COPY providers.tf /home/alpine
+COPY providers.tf /work/
 
 RUN set -x \
     && cd /work && terraform init . \
